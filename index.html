@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#160f17" />
+  <title>Happy 25th Birthday, Zeyad ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <button class="music-btn" id="musicBtn" aria-label="Play birthday music">
+    <span class="music-icon">♫</span>
+    <span id="musicText">Play our song</span>
+  </button>
+  <audio id="song" loop preload="metadata">
+    <source src="assets/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="eyebrow">A little birthday surprise</div>
+      <h1>Happy Birthday,<br><span>Zeyad</span></h1>
+      <p class="hero-sub">to my favorite person, my safe place…<br>and unfortunately, the person I’m stuck with forever 😂❤️</p>
+      <div class="age">25</div>
+      <div class="scroll">SCROLL TO YOUR SURPRISE <span>↓</span></div>
+    </section>
+
+    <section class="intro reveal">
+      <div class="section-kicker">FOR MY FAVORITE HUMAN</div>
+      <h2>Twenty-five looks<br><em>really good</em> on you.</h2>
+      <p>Today is all about celebrating you — your smile, your heart, your annoying little habits, and every beautiful memory we've made together.</p>
+    </section>
+
+    <section class="gallery reveal">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">OUR LITTLE WORLD</div>
+          <h2>Memories I’d<br><em>keep forever.</em></h2>
+        </div>
+        <span class="counter">05 / 05</span>
+      </div>
+      <div class="photo-grid">
+        <figure class="photo p1"><img src="assets/photo1.jpg" alt="A favorite memory"></figure>
+        <figure class="photo p2"><img src="assets/photo2.jpg" alt="A favorite memory"></figure>
+        <figure class="photo p3"><img src="assets/photo3.jpg" alt="A favorite memory"></figure>
+        <figure class="photo p4"><img src="assets/photo4.jpg" alt="A favorite memory"></figure>
+        <figure class="photo p5"><img src="assets/photo5.jpg" alt="A favorite memory"></figure>
+        <audio id="music" loop>
+  <source src="birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener("click", () => {
+    document.getElementById("music").play();
+  }, { once: true });
+    </script>
+      </div>
+    </section>
+
+    <section class="letter reveal">
+      <div class="letter-card">
+        <div class="seal">Z</div>
+        <div class="section-kicker">A LETTER FOR YOU</div>
+        <h2>Dear Zozo,</h2>
+        <div class="letter-text">
+          <p>Happy birthday to my favorite person, my safe place, and unfortunately… the person I’m stuck with forever 😂❤️</p>
+          <p>I hope this year brings you everything you wish for… including a girlfriend like me, because honestly, you’re already lucky enough 😌😂❤️</p>
+          <p>I’m so happy I get to celebrate you today and hopefully every birthday after this one. You mean more to me than you know, and I’m genuinely grateful to have you in my life.</p>
+          <p>Stay handsome, stay annoying, and never forget that you’re my favorite headache 😂❤️</p>
+          <p>Happy birthday zozo..... but don’t get too excited, I’m still going to annoy you every chance I get. 🥹❤️🎂</p>
+        </div>
+        <div class="signature">Forever yours, <span>your favorite headache ❤️</span></div>
+      </div>
+    </section>
+
+    <section class="promise reveal">
+      <div class="promise-inner">
+        <div class="section-kicker">ONE MORE THING</div>
+        <h2>Here’s to this birthday…<br>and <em>every one after it.</em></h2>
+        <p>More coffee dates. More laughs. More random photos. More “I’m not annoying” arguments. More us.</p>
+        <div class="mini-hearts">♡ &nbsp; ♥ &nbsp; ♡</div>
+      </div>
+    </section>
+
+    <section class="final reveal">
+      <div class="final-orb">25</div>
+      <div class="section-kicker">YOUR DAY. YOUR YEAR. YOUR MOMENT.</div>
+      <h2>Happy Birthday<br><em>my Zozo.</em> ❤️</h2>
+      <p>May 25 be the beginning of your best chapter yet.</p>
+      <button class="surprise-btn" id="surpriseBtn">One last surprise ✨</button>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <div class="cake">🎂</div>
+      <div class="section-kicker">PS...</div>
+      <h2>You’re stuck with me.<br><em>Happy birthday ❤️</em></h2>
+      <p>Now go make a wish — I already made mine. 🥹</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
