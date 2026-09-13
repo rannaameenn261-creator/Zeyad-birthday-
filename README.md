@@ -13,6 +13,6 @@ The site is already wired for a local file named:
 
 `assets/song.mp3`
 
-Put your legally obtained copy of **"في قلبي مكان"** in the `assets` folder with exactly that filename.
+Put your legally obtained copy of **"Song.MP3"** in the `assets` folder with exactly that filename.
 
 The website does not include the copyrighted audio file itself.
