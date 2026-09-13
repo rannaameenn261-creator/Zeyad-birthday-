@@ -52,6 +52,15 @@
         <figure class="photo p3"><img src="assets/photo3.jpg" alt="A favorite memory"></figure>
         <figure class="photo p4"><img src="assets/photo4.jpg" alt="A favorite memory"></figure>
         <figure class="photo p5"><img src="assets/photo5.jpg" alt="A favorite memory"></figure>
+        <audio id="music" loop>
+  <source src="birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener("click", () => {
+    document.getElementById("music").play();
+  }, { once: true });
+    </script>
       </div>
     </section>
 
