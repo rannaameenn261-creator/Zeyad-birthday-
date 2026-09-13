@@ -4,7 +4,45 @@ const song = document.getElementById('song');
 const surpriseBtn = document.getElementById('surpriseBtn');
 const modal = document.getElementById('modal');
 const closeModal = document.getElementById('closeModal');
+const musicBtn = document.getElementById('musicBtn');
+const musicText = document.getElementById('musicText');
+const song = document.getElementById('song');
 
+let musicStarted = false;
+
+// Start music on the first touch/click anywhere
+async function startMusic() {
+  if (musicStarted) return;
+
+  try {
+    await song.play();
+    musicStarted = true;
+    musicText.textContent = 'Pause our song';
+  } catch (error) {
+    console.log('Music error:', error);
+  }
+}
+
+document.addEventListener('click', startMusic, { once: true });
+document.addEventListener('touchstart', startMusic, { once: true });
+
+// Music button
+musicBtn.addEventListener('click', async (event) => {
+  event.stopPropagation();
+
+  if (song.paused) {
+    try {
+      await song.play();
+      musicStarted = true;
+      musicText.textContent = 'Pause our song';
+    } catch (error) {
+      musicText.textContent = 'Music error';
+    }
+  } else {
+    song.pause();
+    musicText.textContent = 'Play our song';
+  }
+});
 // تشغيل الأغنية من أول ضغطة في أي مكان بالموقع
 let firstClick = true;
 
